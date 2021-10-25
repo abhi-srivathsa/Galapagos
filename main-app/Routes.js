@@ -177,7 +177,7 @@ const FavoritesSection = createStackNavigator({
 
 FavoritesSection.navigationOptions = ({navigation}) => {
     return{
-        tabBarLabel: "Tourist Services",
+        tabBarLabel: "Favorites",
         tabBarIcon: ({tintcolor}) => (
             <Image
                 source={require('./app/assets/icons/TS.png')}

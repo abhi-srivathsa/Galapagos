@@ -82,7 +82,7 @@ class Home extends React.Component {
                     source={require('../../app/assets/icons/RI.png')}
                     style={{width: 31*rem, height: 25*rem}}
                 />
-                <Text style={styles.buttonText}>Relevant Information</Text>
+                <Text style={styles.buttonText}>Galapagos Overview</Text>
             </View>
             <View style={styles.buttonRight}>
                 <Image
@@ -109,7 +109,7 @@ class Home extends React.Component {
               </View>
               <View style={{borderBottomWidth: 1}}></View>
           </TouchableOpacity>
-          <TouchableOpacity
+          {/* <TouchableOpacity
             style={styles.lastButtonContainer}
             onPress={() => this.props.navigation.navigate("Overview")}>
             <View style={styles.buttonLeft}>
@@ -126,7 +126,7 @@ class Home extends React.Component {
                     />
               </View>
               <View style={{borderBottomWidth: 1}}></View>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
       </View>
     );
   }
