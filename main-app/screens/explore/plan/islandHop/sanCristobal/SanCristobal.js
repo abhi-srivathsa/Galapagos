@@ -23,9 +23,9 @@ class SanCristobal extends React.Component {
                     title="Top Activities"
                     onPress={() => this.props.navigation.navigate("SanCristobalTop")}
                 />
-                <Text>Eat & Drink</Text>
+                <Text>Eat &amp; Drink</Text>
                 <Button
-                    title="Food & Drinks"
+                    title="Food &amp; Drinks"
                     onPress={() => this.props.navigation.navigate("SanCristobalFood")}
                 />
                 <Text>Plan Ahead</Text>

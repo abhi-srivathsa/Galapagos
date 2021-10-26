@@ -363,7 +363,7 @@ class Favorites extends React.Component {
                     source={require('../../app/assets/icons/food.png')}
                     style={{width: 25*rem, height: 31 *rem}}
                 />
-                <Text style={styles.subHeader}>Food & Drinks</Text>
+                <Text style={styles.subHeader}>Food &amp; Drinks</Text>
             </View>
                 {foodContent}
         </ScrollView>

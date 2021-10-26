@@ -78,7 +78,7 @@ class SantaCruz extends React.Component {
                         source={require('../../../../app/assets/icons/food_gray.png')}
                         style={{width: 24*rem, height: 30*rem}}
                     />                  
-                    <Text style={styles.buttonText}>Food & Drinks</Text>
+                    <Text style={styles.buttonText}>Food &amp; Drinks</Text>
               </View>
               <View style={styles.buttonRight}>
                     <Image

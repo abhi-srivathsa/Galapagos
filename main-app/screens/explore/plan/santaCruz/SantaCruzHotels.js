@@ -195,10 +195,10 @@ class SantaCruzHotels extends React.Component {
               source={require('../../../../app/assets/images/headerImage_short.png')}
               style={{width: entireScreenWidth, height: 25*rem}}
           />
-          {this.state.hotels.map(hotel => {
+          {this.state.hotels.map((hotel, index) => {
             const temp = Items.coffeelab1
             return(
-              <View>
+              <View key={index}>
               <Text style={styles.regularBold}>{hotel.name}</Text>
               <Swiper style={styles.wrapper} showsButtons={true}>
                 <View style={styles.slide}>
