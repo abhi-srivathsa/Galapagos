@@ -94,7 +94,7 @@ class Home extends React.Component {
       <ImageBackground source={image} resizeMode="cover" style={styles1.image}>
         <Image
             source={require('../../app/assets/images/welcome.png')}
-            style={{width: entireScreenWidth, height: 200}}
+            style={{width: entireScreenWidth, height: 150}}
         />
         <TouchableOpacity
             style={styles.buttonContainer}
