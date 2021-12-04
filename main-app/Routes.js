@@ -84,9 +84,17 @@ const HomeSection = createStackNavigator({
 HomeSection.navigationOptions = ({ navigation }) => {
     return {
         tabBarLabel: "Home",
+        transparentHeader: {
+          position: 'absolute',
+          backgroundColor: 'transparent',
+          zIndex: 100,
+          top: 0,
+          left: 0,
+          right: 0
+        },
         tabBarIcon: ({tintcolor}) => (
             <Image
-                source={require('./app/assets/icons/turtle.png')}
+                source={require('./app/assets/icons/turtle-1.png')}
                 style={{width: 30, height: 30}}
             />
         )
@@ -112,7 +120,7 @@ LearnSection.navigationOptions = ({ navigation }) => {
         tabBarLabel: "Learn",
         tabBarIcon: ({tintcolor}) => (
             <Image
-                source={require('./app/assets/icons/galapagos.png')}
+                source={require('./app/assets/icons/bulb.png')}
                 style={{width: 30, height: 30}}
             />
         )
@@ -164,7 +172,7 @@ ExploreSection.navigationOptions = ({navigation}) => {
         tabBarLabel: "Explore",
         tabBarIcon: ({tintcolor}) => (
             <Image
-                source={require('./app/assets/icons/compass.png')}
+                source={require('./app/assets/icons/explore.png')}
                 style={{width: 30, height: 30}}
             />
         )
@@ -180,7 +188,7 @@ FavoritesSection.navigationOptions = ({navigation}) => {
         tabBarLabel: "Favorites",
         tabBarIcon: ({tintcolor}) => (
             <Image
-                source={require('./app/assets/icons/TS.png')}
+                source={require('./app/assets/icons/heartlogo.png')}
                 style={{width: 30, height: 30}}
             />
         )

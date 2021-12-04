@@ -18,19 +18,19 @@ import { Tab } from 'native-base';
 //   console.log("Is connected?", state.isConnected);
 // });
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBkGmokW285RxesrlEOEGMOpL7DjBMvk_U",
-  authDomain: "galapago-d4744.firebaseapp.com",
-  databaseURL: "https://galapago-d4744-default-rtdb.firebaseio.com",
-  projectId: "galapago-d4744",
-  storageBucket: "galapago-d4744.appspot.com",
-  messagingSenderId: "508955483910",
-  appId: "1:508955483910:web:e910e43a67fdbca4c64887"
-};
-
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-export const auth = firebase.auth;
-export const db = firebase.database();
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBkGmokW285RxesrlEOEGMOpL7DjBMvk_U",
+//   authDomain: "galapago-d4744.firebaseapp.com",
+//   databaseURL: "https://galapago-d4744-default-rtdb.firebaseio.com",
+//   projectId: "galapago-d4744",
+//   storageBucket: "galapago-d4744.appspot.com",
+//   messagingSenderId: "508955483910",
+//   appId: "1:508955483910:web:e910e43a67fdbca4c64887"
+// };
+//
+// const firebaseApp = firebase.initializeApp(firebaseConfig);
+// export const auth = firebase.auth;
+// export const db = firebase.database();
 // const storage = getStorage(firebaseApp);
 // const connectedRef = ref(db, ".info/connected");
 // onValue(connectedRef, (snap) => {

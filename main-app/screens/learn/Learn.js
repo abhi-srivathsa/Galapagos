@@ -47,7 +47,7 @@ const styles = StyleSheet.create ({
         alignItems: 'center'
     },
     chevron:{
-        width: 11*rem, 
+        width: 11*rem,
         height: 18*rem
     }
 });
@@ -57,11 +57,9 @@ class Learn extends React.Component {
   render(){
     return (
       <View style={{backgroundColor: 'white', flex: 1}}>
-        <Text style={styles.header}>Learn</Text>
-
         <Image
-            source={require('../../app/assets/images/headerImage_short.png')}
-            style={{width: entireScreenWidth, height: 25*rem}}
+            source={require('../../app/assets/images/g1.jpg')}
+            style={{width: entireScreenWidth, height: 200}}
         />
 
         <TouchableOpacity
@@ -88,14 +86,14 @@ class Learn extends React.Component {
                 <Image
                       source={require('../../app/assets/icons/scienceAndSus_gray.png')}
                       style={{width: 31*rem, height: 27*rem}}
-                />                  
+                />
                 <Text style={styles.buttonText}>Science & Sustainability</Text>
               </View>
               <View style={styles.buttonRight}>
                     <Image
                         source={require('../../app/assets/icons/chevron.png')}
                         style={styles.chevron}
-                    />              
+                    />
               </View>
               <View style={{borderBottomWidth: 1}}></View>
           </TouchableOpacity>
@@ -106,14 +104,14 @@ class Learn extends React.Component {
                 <Image
                       source={require('../../app/assets/icons/history_gray.png')}
                       style={{width: 27*rem, height: 28*rem}}
-                />                  
+                />
                 <Text style={styles.buttonText}>History</Text>
               </View>
               <View style={styles.buttonRight}>
                     <Image
                         source={require('../../app/assets/icons/chevron.png')}
                         style={styles.chevron}
-                    />              
+                    />
               </View>
               <View style={{borderBottomWidth: 1}}></View>
           </TouchableOpacity>

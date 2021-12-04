@@ -1,10 +1,11 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import {StyleSheet, Button, Text, View, TouchableOpacity, Image, Dimensions,} from 'react-native';
+import {StatusBar, ImageBackground,StyleSheet, Button, Text, View, TouchableOpacity, Image, Dimensions,} from 'react-native';
 import Video from 'react-native-video';
 
 //get scaling factors
 const entireScreenWidth = Dimensions.get('window').width;
+const image = require('../../app/assets/images/background.png')
 let rem;
 rem = entireScreenWidth / 350;
 
@@ -15,31 +16,36 @@ const styles = StyleSheet.create ({
         paddingVertical: 16,
         paddingLeft: 34,
         paddingRight: 59
+
     },
     buttonText:{
+        color: '#FFFFFF',
         fontSize: 17*rem,
         paddingLeft: 16
     },
     buttonContainer:{
         flexDirection: 'row',
-        borderBottomWidth: 1,
-        borderColor: '#C0C0C0',
+        borderBottomWidth: 0,
+        borderColor: '#ffffff',
         paddingVertical: 10,
         paddingLeft: 34,
-        paddingRight: 14
+        paddingRight: 14,
+        backgroundColor: 'rgba(52, 52, 52, 0.4)'
     },
     lastButtonContainer:{
         flexDirection: 'row',
-        borderBottomWidth: 1,
+        borderBottomWidth: 0,
         paddingVertical: 10,
         borderColor: '#C0C0C0',
         paddingLeft: 34,
-        paddingRight: 14
+        paddingRight: 14,
+        backgroundColor: 'rgba(52, 52, 52, 0.4)'
+
     },
     buttonLeft:{
-        flex: 1,
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: 'transparent',
     },
     buttonRight:{
         flex: 1,
@@ -52,6 +58,24 @@ const styles = StyleSheet.create ({
         height: 18*rem
     }
 });
+const styles1 = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  image: {
+    flex: 1,
+    justifyContent: "center"
+  },
+  text: {
+    color: "white",
+    fontSize: 42,
+    lineHeight: 84,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#000000c0"
+  }
+});
+
 
 
 class Home extends React.Component {
@@ -65,22 +89,20 @@ class Home extends React.Component {
   // }
 
   render(){
-    // const gVideo = require('/Users/abhi/Galapago/main/Galapagos-Islands-Project/main-app/app/assets/videos/video1.mp4');
     return (
-      <View style={{backgroundColor: 'white', flex: 1}}>
-        <Text style={styles.header}>Home</Text>
-
+      <View style={{backgroundColor: 'history_gray', flex: 1}}>
+      <ImageBackground source={image} resizeMode="cover" style={styles1.image}>
         <Image
-            source={require('../../app/assets/images/headerImage_short.png')}
-            style={{width: entireScreenWidth, height: 25*rem}}
+            source={require('../../app/assets/images/welcome.png')}
+            style={{width: entireScreenWidth, height: 200}}
         />
         <TouchableOpacity
             style={styles.buttonContainer}
             onPress={() => this.props.navigation.navigate("RelevantInformation")}>
             <View style={styles.buttonLeft}>
                 <Image
-                    source={require('../../app/assets/icons/RI.png')}
-                    style={{width: 31*rem, height: 25*rem}}
+                    source={require('../../app/assets/icons/info.png')}
+                    style={{width: 33*rem, height: 25*rem}}
                 />
                 <Text style={styles.buttonText}>Galapagos Overview</Text>
             </View>
@@ -96,7 +118,7 @@ class Home extends React.Component {
             onPress={() => this.props.navigation.navigate("Maps")}>
             <View style={styles.buttonLeft}>
                 <Image
-                      source={require('../../app/assets/icons/Map.png')}
+                      source={require('../../app/assets/icons/mapWhite.png')}
                       style={{width: 31*rem, height: 27*rem}}
                 />
                 <Text style={styles.buttonText}>Maps</Text>
@@ -127,6 +149,11 @@ class Home extends React.Component {
               </View>
               <View style={{borderBottomWidth: 1}}></View>
           </TouchableOpacity> */}
+          <Image
+              source={require('../../app/assets/images/Ga.png')}
+              style={{width: entireScreenWidth, height: 355 * rem}}
+          />
+          </ImageBackground>
       </View>
     );
   }

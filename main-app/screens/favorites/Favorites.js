@@ -344,10 +344,9 @@ class Favorites extends React.Component {
             <View style={styles.hidden}>
             <Text>{this.State.Time}</Text>
             </View>
-        <Text style={styles.header}>Favorites</Text>
         <Image
-            source={require('../../app/assets/images/headerImage_short.png')}
-            style={{width: entireScreenWidth, height: 25*rem}}
+            source={require('../../app/assets/images/g3.jpg')}
+            style={{width: entireScreenWidth, height: 200}}
         />
         <ScrollView style={styles.container}>
             <View style={{borderBottomWidth: 2, borderColor: '#27C4CC', flexDirection: "row", alignItems: 'center', paddingLeft: 20}}>

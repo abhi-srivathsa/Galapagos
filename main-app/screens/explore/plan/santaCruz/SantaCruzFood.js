@@ -202,7 +202,6 @@ class SantaCruzFood extends React.Component {
               style={{width: entireScreenWidth, height: 25*rem}}
           />
           {this.state.restaurants.map((restaurant, index) => {
-            const temp = Items.coffeelab1
             return(
               <View key={index}>
               <Text style={styles.regularBold}>{restaurant.name}</Text>

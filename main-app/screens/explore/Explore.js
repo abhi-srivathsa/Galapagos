@@ -58,11 +58,9 @@ class Explore extends React.Component {
     render(){
         return (
             <View style={{backgroundColor: 'white', flex: 1}}>
-                <Text style={styles.header}>Explore</Text>
-
                 <Image
-                    source={require('../../app/assets/images/headerImage_short.png')}
-                    style={{width: entireScreenWidth, height: 25*rem}}
+                    source={require('../../app/assets/images/g2.webp')}
+                    style={{width: entireScreenWidth, height: 200}}
                 />
 
                 <TouchableOpacity
