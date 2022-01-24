@@ -55,9 +55,9 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
-    }, 
+    },
     chevron:{
-        width: 11*rem, 
+        width: 11*rem,
         height: 18*rem
     },
     subHeader:{
@@ -65,7 +65,7 @@ const styles = StyleSheet.create ({
       color: '#000000',
       fontSize: 17*rem,
       paddingLeft: 30,
-      paddingTop: 34, 
+      paddingTop: 34,
     },
     bodyText:{
         fontSize: 17*rem,
@@ -80,16 +80,9 @@ class History extends React.Component {
     return (
         <ScrollView style={styles.container}>
       <View>
-        <View style={styles.header}>
-            <Image
-                source={require('../../../app/assets/icons/history.png')}
-                style={{width: 28*rem, height: 29*rem}}
-            />
-            <Text style={styles.headerText}>History</Text>
-        </View>
         <Image
-            source={require('../../../app/assets/images/headerImage_short.png')}
-            style={{width: entireScreenWidth, height: 25*rem}}
+            source={require('../../../app/assets/images/History.png')}
+            style={{width: entireScreenWidth, height: 200}}
         />
         <TouchableOpacity
             style={styles.buttonContainer}
@@ -98,14 +91,14 @@ class History extends React.Component {
                 <Image
                     source={require('../../../app/assets/icons/timeline_gray.png')}
                     style={{width: 21*rem, height: 24*rem}}
-                />                  
+                />
                 <Text style={styles.buttonText}>Timeline</Text>
             </View>
             <View style={styles.buttonRight}>
                 <Image
                     source={require('../../../app/assets/icons/chevron.png')}
                     style={styles.chevron}
-                />                
+                />
             </View>
         </TouchableOpacity>
         <TouchableOpacity
@@ -115,14 +108,14 @@ class History extends React.Component {
                 <Image
                     source={require('../../../app/assets/icons/people_gray.png')}
                     style={{width: 27*rem, height: 27*rem}}
-                />                   
+                />
                 <Text style={styles.buttonText}>People</Text>
             </View>
             <View style={styles.buttonRight}>
                 <Image
                     source={require('../../../app/assets/icons/chevron.png')}
                     style={styles.chevron}
-                />                   
+                />
             </View>
         </TouchableOpacity>
         <Text style={styles.subHeader}> Natural History </Text>

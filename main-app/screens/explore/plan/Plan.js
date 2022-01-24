@@ -52,9 +52,9 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
-    }, 
+    },
     chevron:{
-        width: 11*rem, 
+        width: 11*rem,
         height: 18*rem
     }
 });
@@ -63,13 +63,11 @@ class Plan extends React.Component {
   render(){
     return (
       <View style={{backgroundColor: 'white', flex: 1}}>
-          <View style={styles.header}>
-                <Image
-                    source={require('../../../app/assets/icons/plan.png')}
-                    style={{width: 28*rem, height: 32*rem}}
-                />
-              <Text style={styles.headerText}>Plan Your Trip</Text>
-          </View>
+
+          <Image
+              source={require('../../../app/assets/images/Plan.png')}
+              style={{width: entireScreenWidth, height: 200}}
+          />
           <TouchableOpacity
               style={styles.buttonContainer}
               onPress={() => this.props.navigation.navigate("TopActivities")}>
@@ -77,14 +75,14 @@ class Plan extends React.Component {
                     <Image
                         source={require('../../../app/assets/icons/topActivities_gray.png')}
                         style={{width: 30*rem, height: 30*rem}}
-                    />                  
+                    />
                     <Text style={styles.buttonText}>Top Activities</Text>
               </View>
               <View style={styles.buttonRight}>
                     <Image
                         source={require('../../../app/assets/icons/chevron.png')}
                         style={styles.chevron}
-                    />                
+                    />
                 </View>
           </TouchableOpacity>
           <TouchableOpacity
@@ -94,14 +92,14 @@ class Plan extends React.Component {
                     <Image
                         source={require('../../../app/assets/icons/island_gray.png')}
                         style={{width: 27*rem, height: 31*rem}}
-                    />                   
+                    />
                     <Text style={styles.buttonText}>Santa Cruz Island</Text>
               </View>
               <View style={styles.buttonRight}>
                     <Image
                         source={require('../../../app/assets/icons/chevron.png')}
                         style={styles.chevron}
-                    />                   
+                    />
                 </View>
           </TouchableOpacity>
           <TouchableOpacity
@@ -111,14 +109,14 @@ class Plan extends React.Component {
                     <Image
                         source={require('../../../app/assets/icons/agencies_gray.png')}
                         style={{width: 27*rem, height: 31*rem}}
-                    />                   
+                    />
                     <Text style={styles.buttonText}>Travel Agencies</Text>
               </View>
               <View style={styles.buttonRight}>
                     <Image
                         source={require('../../../app/assets/icons/chevron.png')}
                         style={styles.chevron}
-                    />                   
+                    />
                 </View>
           </TouchableOpacity>
           <TouchableOpacity
@@ -128,14 +126,14 @@ class Plan extends React.Component {
                     <Image
                         source={require('../../../app/assets/icons/cruise_gray.png')}
                         style={{width: 27*rem, height: 27*rem}}
-                    />                   
+                    />
                     <Text style={styles.buttonText}>Want to Island Hop?</Text>
               </View>
               <View style={styles.buttonRight}>
                     <Image
                         source={require('../../../app/assets/icons/chevron.png')}
                         style={styles.chevron}
-                    />                   
+                    />
                 </View>
           </TouchableOpacity>
       </View>

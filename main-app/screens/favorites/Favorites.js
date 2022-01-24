@@ -1,5 +1,10 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
+import { LogBox } from 'react-native';
+
+LogBox.ignoreLogs(['Unhandled promise rejection']);
+console.warn = () => {};
+
 import {
     StyleSheet,
     Button,
@@ -345,7 +350,7 @@ class Favorites extends React.Component {
             <Text>{this.State.Time}</Text>
             </View>
         <Image
-            source={require('../../app/assets/images/g3.jpg')}
+            source={require('../../app/assets/images/Favorites.png')}
             style={{width: entireScreenWidth, height: 200}}
         />
         <ScrollView style={styles.container}>

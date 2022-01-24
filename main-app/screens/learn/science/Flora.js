@@ -52,10 +52,10 @@ class Flora extends React.Component {
                   />
                   <Text style={styles.headerText}>Flora</Text>
               </View>
-              <Image
-              source={require('../../../app/assets/images/headerImage_short.png')}
-              style={{width: entireScreenWidth, height: 25*rem, marginBottom: 34}}
-            />
+               {/*< Image
+            source={require('../../../app/assets/images/headerImage_short.png')}
+            style={{width: entireScreenWidth, height: 25*rem}}
+          />*/}
               <SafeAreaView style={styles.container}>
                       <View style={styles.bodyContainer}>
                       <Text style={styles.bodyText}>Scientifically, it is known that the Galapagos flora has managed to grow thanks to the winds, the

@@ -57,9 +57,9 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
-    }, 
+    },
     chevron:{
-        width: 11*rem, 
+        width: 11*rem,
         height: 18*rem
     },
     subHeader:{
@@ -67,7 +67,7 @@ const styles = StyleSheet.create ({
       color: '#000000',
       fontSize: 17*rem,
       paddingLeft: 34,
-      paddingTop: 16, 
+      paddingTop: 16,
       paddingBottom: 16
     },
     bodyText:{
@@ -94,21 +94,14 @@ const styles = StyleSheet.create ({
 });
 
 class AboutUs extends React.Component {
-    
+
   render(){
     return (
         <ScrollView style={styles.container}>
       <View>
-        <View style={styles.header}>
-            <Image
-                source={require('../../app/assets/icons/aboutUs.png')}
-                style={{width: 34*rem, height: 27*rem}}
-            />
-            <Text style={styles.headerText}>About Us</Text>
-        </View>
         <Image
-            source={require('../../app/assets/images/headerImage_short.png')}
-            style={{width: entireScreenWidth, height: 25*rem}}
+            source={require('../../app/assets/images/AboutUs.png')}
+            style={{width: entireScreenWidth, height: 200}}
         />
         <View>
             <Collapse>

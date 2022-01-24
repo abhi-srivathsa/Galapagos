@@ -57,9 +57,9 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
-    }, 
+    },
     chevron:{
-        width: 11*rem, 
+        width: 11*rem,
         height: 18*rem
     },
     subHeader:{
@@ -67,7 +67,7 @@ const styles = StyleSheet.create ({
       color: '#000000',
       fontSize: 17*rem,
       paddingLeft: 34,
-      paddingTop: 16, 
+      paddingTop: 16,
       paddingBottom: 16
     },
     subHeaderBlue:{
@@ -75,7 +75,7 @@ const styles = StyleSheet.create ({
       color: '#0C7A80',
       fontSize: 30*rem,
       paddingLeft: 34,
-      paddingTop: 25, 
+      paddingTop: 25,
       paddingBottom: 16
     },
     bodyText:{
@@ -112,7 +112,7 @@ const styles = StyleSheet.create ({
 });
 
 class Timeline extends React.Component {
-    
+
   render(){
     return (
         <ScrollView style={styles.container}>
@@ -124,10 +124,10 @@ class Timeline extends React.Component {
             />
             <Text style={styles.headerText}>Timeline</Text>
         </View>
-        <Image
-            source={require('../../../app/assets/images/headerImage_short.png')}
-            style={{width: entireScreenWidth, height: 25*rem}}
-        />
+        {/*< Image
+        source={require('../../../app/assets/images/headerImage_short.png')}
+        style={{width: entireScreenWidth, height: 25*rem}}
+        />*/}
             <Text style={styles.subHeaderBlue}>1535</Text>
             <Text style={styles.bodyText}>Fray Tomás de Berlanga discovers the Galapagos Islands.</Text>
             <Text style={styles.subHeaderBlue}>1832</Text>

@@ -59,7 +59,7 @@ class Explore extends React.Component {
         return (
             <View style={{backgroundColor: 'white', flex: 1}}>
                 <Image
-                    source={require('../../app/assets/images/g2.webp')}
+                    source={require('../../app/assets/images/Explore.png')}
                     style={{width: entireScreenWidth, height: 200}}
                 />
 
@@ -98,6 +98,10 @@ class Explore extends React.Component {
                     </View>
                     <View style={{borderBottomWidth: 1}}></View>
                 </TouchableOpacity>
+                <Image
+                    source={require('../../app/assets/images/g2.webp')}
+                    style={{width: entireScreenWidth, height: 355 * rem}}
+                />
             </View>
         );
     }

@@ -5,7 +5,7 @@ import Video from 'react-native-video';
 
 //get scaling factors
 const entireScreenWidth = Dimensions.get('window').width;
-const image = require('../../app/assets/images/background.png')
+const image = require('../../app/assets/images/Background.png')
 let rem;
 rem = entireScreenWidth / 350;
 
@@ -19,33 +19,29 @@ const styles = StyleSheet.create ({
 
     },
     buttonText:{
-        color: '#FFFFFF',
         fontSize: 17*rem,
         paddingLeft: 16
     },
     buttonContainer:{
         flexDirection: 'row',
-        borderBottomWidth: 0,
-        borderColor: '#ffffff',
+        borderBottomWidth: 1,
+        borderColor: '#C0C0C0',
         paddingVertical: 10,
         paddingLeft: 34,
-        paddingRight: 14,
-        backgroundColor: 'rgba(52, 52, 52, 0.4)'
+        paddingRight: 14
     },
     lastButtonContainer:{
         flexDirection: 'row',
-        borderBottomWidth: 0,
+        borderBottomWidth: 1,
         paddingVertical: 10,
         borderColor: '#C0C0C0',
         paddingLeft: 34,
-        paddingRight: 14,
-        backgroundColor: 'rgba(52, 52, 52, 0.4)'
-
+        paddingRight: 14
     },
     buttonLeft:{
+        flex: 1,
         flexDirection: 'row',
-        alignItems: 'center',
-        backgroundColor: 'transparent',
+        alignItems: 'center'
     },
     buttonRight:{
         flex: 1,
@@ -91,17 +87,16 @@ class Home extends React.Component {
   render(){
     return (
       <View style={{backgroundColor: 'history_gray', flex: 1}}>
-      <ImageBackground source={image} resizeMode="cover" style={styles1.image}>
         <Image
-            source={require('../../app/assets/images/welcome.png')}
-            style={{width: entireScreenWidth, height: 150}}
+            source={require('../../app/assets/images/Main.png')}
+            style={{width: entireScreenWidth, height: 200}}
         />
         <TouchableOpacity
             style={styles.buttonContainer}
             onPress={() => this.props.navigation.navigate("RelevantInformation")}>
             <View style={styles.buttonLeft}>
                 <Image
-                    source={require('../../app/assets/icons/info.png')}
+                    source={require('../../app/assets/icons/info.jpg')}
                     style={{width: 33*rem, height: 25*rem}}
                 />
                 <Text style={styles.buttonText}>Galapagos Overview</Text>
@@ -118,7 +113,7 @@ class Home extends React.Component {
             onPress={() => this.props.navigation.navigate("Maps")}>
             <View style={styles.buttonLeft}>
                 <Image
-                      source={require('../../app/assets/icons/mapWhite.png')}
+                      source={require('../../app/assets/icons/Map.png')}
                       style={{width: 31*rem, height: 27*rem}}
                 />
                 <Text style={styles.buttonText}>Maps</Text>
@@ -150,10 +145,9 @@ class Home extends React.Component {
               <View style={{borderBottomWidth: 1}}></View>
           </TouchableOpacity> */}
           <Image
-              source={require('../../app/assets/images/Ga.png')}
+              source={require('../../app/assets/images/Ga_Inverted.png')}
               style={{width: entireScreenWidth, height: 355 * rem}}
           />
-          </ImageBackground>
       </View>
     );
   }

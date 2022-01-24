@@ -58,7 +58,7 @@ class Learn extends React.Component {
     return (
       <View style={{backgroundColor: 'white', flex: 1}}>
         <Image
-            source={require('../../app/assets/images/g1.jpg')}
+            source={require('../../app/assets/images/Learn.png')}
             style={{width: entireScreenWidth, height: 200}}
         />
 
@@ -114,7 +114,12 @@ class Learn extends React.Component {
                     />
               </View>
               <View style={{borderBottomWidth: 1}}></View>
+
           </TouchableOpacity>
+          <Image
+              source={require('../../app/assets/images/g1.jpg')}
+              style={{width: entireScreenWidth, height: 355 * rem}}
+          />
       </View>
     );
   }

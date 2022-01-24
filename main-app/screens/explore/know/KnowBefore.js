@@ -52,9 +52,9 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
-    }, 
+    },
     chevron:{
-        width: 11*rem, 
+        width: 11*rem,
         height: 18*rem
     },
     subHeader:{
@@ -62,7 +62,7 @@ const styles = StyleSheet.create ({
       color: '#000000',
       fontSize: 17*rem,
       paddingLeft: 34,
-      paddingTop: 16, 
+      paddingTop: 16,
       paddingBottom: 16
     },
     bodyText:{
@@ -78,16 +78,9 @@ class KnowBefore extends React.Component {
   render(){
     return (
       <View style={{backgroundColor: 'white', flex: 1}}>
-        <View style={styles.header}>
-            <Image
-                source={require('../../../app/assets/icons/knowBefore.png')}
-                style={{width: 31*rem, height: 31*rem}}
-            />
-            <Text style={styles.headerText}>Know Before You Go</Text>
-        </View>
         <Image
-            source={require('../../../app/assets/images/headerImage_short.png')}
-            style={{width: entireScreenWidth, height: 25*rem}}
+            source={require('../../../app/assets/images/Know.png')}
+            style={{width: entireScreenWidth, height: 200}}
         />
         <TouchableOpacity
             style={styles.buttonContainer}
@@ -96,14 +89,14 @@ class KnowBefore extends React.Component {
                 <Image
                     source={require('../../../app/assets/icons/alphabet_gray.png')}
                     style={{width: 32*rem, height: 25*rem}}
-                />                  
+                />
                 <Text style={styles.buttonText}>Useful phrases for Ecuador</Text>
             </View>
             <View style={styles.buttonRight}>
                 <Image
                     source={require('../../../app/assets/icons/chevron.png')}
                     style={styles.chevron}
-                />                
+                />
             </View>
         </TouchableOpacity>
         <TouchableOpacity
@@ -113,14 +106,14 @@ class KnowBefore extends React.Component {
                 <Image
                     source={require('../../../app/assets/icons/galap.png')}
                     style={{width: 29*rem, height: 29*rem}}
-                />                   
+                />
                 <Text style={styles.buttonText}>Cultural & Social Norms</Text>
             </View>
             <View style={styles.buttonRight}>
                 <Image
                     source={require('../../../app/assets/icons/chevron.png')}
                     style={styles.chevron}
-                />                   
+                />
             </View>
         </TouchableOpacity>
         <TouchableOpacity
@@ -130,14 +123,14 @@ class KnowBefore extends React.Component {
                 <Image
                     source={require('../../../app/assets/icons/rules1_gray.png')}
                     style={{width: 27*rem, height: 31*rem}}
-                />                   
+                />
                 <Text style={styles.buttonText}>Rules of the National Park</Text>
             </View>
             <View style={styles.buttonRight}>
                 <Image
                     source={require('../../../app/assets/icons/chevron.png')}
                     style={styles.chevron}
-                />                   
+                />
             </View>
         </TouchableOpacity>
         <Text style={styles.subHeader}>Internet & Connectivity</Text>
@@ -152,14 +145,14 @@ class KnowBefore extends React.Component {
                 <Image
                     source={require('../../../app/assets/icons/phone.png')}
                     style={{width: 25*rem, height: 25*rem}}
-                />                   
+                />
                 <Text style={styles.buttonText}>Call 911</Text>
             </View>
             <View style={styles.buttonRight}>
                 <Image
                     source={require('../../../app/assets/icons/chevron.png')}
                     style={styles.chevron}
-                />                   
+                />
             </View>
         </TouchableOpacity>
     </View>

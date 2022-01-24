@@ -73,16 +73,9 @@ class ScienceAndSus extends React.Component {
     return (
         <ScrollView style={styles.container}>
           <View>
-              <View style={styles.header}>
-                  <Image
-                      source={require('../../../app/assets/icons/scienceAndSus.png')}
-                      style={{width: 35*rem, height: 31*rem}}
-                  />
-                  <Text style={styles.headerText}>Science & Sustainability</Text>
-              </View>
               <Image
-              source={require('../../../app/assets/images/headerImage_short.png')}
-              style={{width: entireScreenWidth, height: 25*rem}}
+              source={require('../../../app/assets/images/SS.png')}
+              style={{width: entireScreenWidth, height: 200}}
             />
               <View style={{borderBottomWidth: 2, borderColor: '#27C4CC'}}>
                   <Text style={styles.subHeader}>Flora & Fauna</Text>

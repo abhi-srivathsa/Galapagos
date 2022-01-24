@@ -57,9 +57,9 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
-    }, 
+    },
     chevron:{
-        width: 11*rem, 
+        width: 11*rem,
         height: 18*rem
     },
     subHeader:{
@@ -67,7 +67,7 @@ const styles = StyleSheet.create ({
       color: '#000000',
       fontSize: 17*rem,
       paddingLeft: 34,
-      paddingTop: 16, 
+      paddingTop: 16,
       paddingBottom: 16
     },
     bodyText:{
@@ -94,7 +94,7 @@ const styles = StyleSheet.create ({
 });
 
 class Overview extends React.Component {
-    
+
   render(){
     return (
         <ScrollView style={styles.container}>
@@ -106,15 +106,14 @@ class Overview extends React.Component {
             />
             <Text style={styles.headerText}>Galapagos Overview</Text>
         </View>
-        <Image
-            source={require('../../app/assets/images/headerImage_short.png')}
-            style={{width: entireScreenWidth, height: 25*rem}}
-        />
-        
+        {/*< Image
+        source={require('../../../app/assets/images/headerImage_short.png')}
+        style={{width: entireScreenWidth, height: 25*rem}}
+      />*/}
         <Text style={styles.bodyText}>•	In the airports of Quito and Guayaquil prior to the check-in with your airline you must:
 Step 1: Register with the Galapagos Government Council Office to obtain your Transit Control Card (TCT), which must be kept until you leave the archipelago (maximum 2 months stay). The cost of the TCT is $20 (Twenty United States dollars).
 Fill out the Previous Registration Form for the TCT here  (check the correct link)
- 
+
 Step 2: Check your baggage in the Galapagos ABG Biosecurity Control and Regulation Agency room to avoid unintentional introduction of invasive species that threaten the biodiversity of the islands. The same applies to transport between populated islands at the boarding docks of the various populated ports.
         </Text>
     </View>

@@ -55,9 +55,9 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
-    }, 
+    },
     chevron:{
-        width: 11*rem, 
+        width: 11*rem,
         height: 18*rem
     },
     subHeader:{
@@ -65,7 +65,7 @@ const styles = StyleSheet.create ({
       color: '#000000',
       fontSize: 17*rem,
       paddingLeft: 30,
-      paddingTop: 34, 
+      paddingTop: 34,
     },
     bodyText:{
         fontSize: 17*rem,
@@ -87,10 +87,10 @@ class People extends React.Component {
             />
             <Text style={styles.headerText}>People</Text>
         </View>
-        <Image
-            source={require('../../../app/assets/images/headerImage_short.png')}
-            style={{width: entireScreenWidth, height: 25*rem}}
-        />
+        {/*< Image
+        source={require('../../../app/assets/images/headerImage_short.png')}
+        style={{width: entireScreenWidth, height: 25*rem}}
+        />*/}
             <Text style={styles.bodyText}>The history of the colonization of the Galapagos goes back to the middle of the 17th century,
                 with the arrival of the first pirates who used the islands as a refuge; subsequently the Norwegians
                 settled on the islands promoting human settlements. {"\n\n"}

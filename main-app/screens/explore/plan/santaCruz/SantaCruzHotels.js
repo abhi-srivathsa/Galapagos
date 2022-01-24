@@ -191,10 +191,10 @@ class SantaCruzHotels extends React.Component {
               />
               <Text style={styles.headerText}>Hotels</Text>
           </View>
-          <Image
-              source={require('../../../../app/assets/images/headerImage_short.png')}
-              style={{width: entireScreenWidth, height: 25*rem}}
-          />
+          {/*< Image
+          source={require('../../../app/assets/images/headerImage_short.png')}
+          style={{width: entireScreenWidth, height: 25*rem}}
+          />*/}
           {this.state.hotels.map((hotel, index) => {
             const temp = Items.coffeelab1
             return(

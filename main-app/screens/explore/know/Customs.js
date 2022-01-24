@@ -13,7 +13,7 @@ rem = entireScreenWidth / 350;
 
 const styles = StyleSheet.create ({
     container: {
-        backgroundColor: 'white', 
+        backgroundColor: 'white',
         flex: 1
     },
     header:{
@@ -59,9 +59,9 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
-    }, 
+    },
     chevron:{
-        width: 11*rem, 
+        width: 11*rem,
         height: 18*rem
     },
     regularBold:{
@@ -69,7 +69,7 @@ const styles = StyleSheet.create ({
         color: '#000000',
         fontSize: 17*rem,
         paddingLeft: 30,
-        paddingTop: 16, 
+        paddingTop: 16,
         paddingBottom: 16,
         flexWrap: "wrap"
     },
@@ -106,27 +106,27 @@ const styles = StyleSheet.create ({
       fontWeight: 'bold'
     },
     infoPhone: {
-      width: 20*rem, 
+      width: 20*rem,
       height: 18*rem,
     },
     infoEmail: {
-      width: 21*rem, 
+      width: 21*rem,
       height: 16*rem,
     },
     infoAddress: {
-      width: 18*rem, 
+      width: 18*rem,
       height: 21*rem,
     },
     infoWeb: {
-      width: 20*rem, 
+      width: 20*rem,
       height: 20*rem,
     },
     infoText: {
       fontSize: 17*rem,
       color: '#616161',
-      lineHeight: 20*rem, 
+      lineHeight: 20*rem,
       marginLeft: 10*rem,
-      marginRight: 20*rem, 
+      marginRight: 20*rem,
     },
     numberRow:{
       flexDirection: 'row',
@@ -183,11 +183,11 @@ class Customs extends React.Component {
               />
               <Text style={styles.headerText}>Social Customs</Text>
           </View>
-          <Image
-              source={require('../../../app/assets/images/headerImage_short.png')}
-              style={{width: entireScreenWidth, height: 25*rem}}
-            />
-            
+          {/*< Image
+          source={require('../../../app/assets/images/headerImage_short.png')}
+          style={{width: entireScreenWidth, height: 25*rem}}
+          />*/}
+
             <Text style={styles.regular}>
             Ecuadorians are known to be very hospitable, friendly and helpful.{"\n\n"}
 
@@ -199,7 +199,7 @@ class Customs extends React.Component {
 
         </Text>
 
-      
+
       </View>
       </ScrollView>
       </SafeAreaView>
