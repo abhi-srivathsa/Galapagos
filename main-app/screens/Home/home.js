@@ -145,7 +145,7 @@ class Home extends React.Component {
               <View style={{borderBottomWidth: 1}}></View>
           </TouchableOpacity> */}
           <Image
-              source={require('../../app/assets/images/Ga_Inverted.png')}
+              source={require('../../app/assets/images/Ga_withLogo.png')}
               style={{width: entireScreenWidth, height: 355 * rem}}
           />
       </View>
